@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-acmutsa",
+  "version": "0.1.0",
+  "description": "ACM UTSA shared ESLint config (base + TypeScript + React + Next)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": ["eslint", "eslintconfig", "acmutsa"],
+  "files": ["dist"],
+  "engines": { "node": ">=14" },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0 || ^5.0.0",
+    "@typescript-eslint/parser": "^6.0.0 || ^5.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-config-next": "^13.0.0 || ^14.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "repository": {"type":"git","url":"https://github.com/acmutsa/eslint-config-acmutsa.git"},
+  "author": "acmutsa",
+  "license": "MIT"
+}
